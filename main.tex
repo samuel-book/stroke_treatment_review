@@ -1,0 +1,39 @@
+\documentclass{article}
+
+% Packages
+\usepackage[a4paper, left=2.0cm, right=2.0cm, top=2.0cm, bottom=2.0cm]{geometry}
+\usepackage{longtable,booktabs} % For tables
+\usepackage{caption} % Customisable captions
+\usepackage{graphicx} % Required for including pictures
+\usepackage{authblk} % For formatting authors
+\usepackage{amsmath} % For maths typesetting
+\usepackage{lineno} % Add line numbers with \linenumbers
+\usepackage[toc,page]{appendix} % For formatting/numbering appendix
+\usepackage[utf8]{inputenc} % For UTF8 character encoding
+\usepackage{url}
+\usepackage{microtype}
+\usepackage{parskip}
+\usepackage[super]{natbib} % References
+\usepackage{makecell} % For line breaks in a table
+\usepackage{subcaption} % Allows use of subfigures
+\usepackage{lmodern} % A scalable font - avoids erros due to non-sclabale fonts
+\usepackage{lipsum} % For generating test text
+\usepackage{multicol}
+\usepackage{tabularx} % To allow tables to be full page width
+\DeclareUnicodeCharacter{2060}{\nolinebreak} % Prevent unicode (U+2060) error on local complile
+\usepackage{afterpage} % For palcing tabel at top of next page
+\let\endtitlepage\relax % Avoid page break after title page
+
+\title{A review of treatment of stroke with thrombolysis or thrombectomy}
+\author{Stroke Team}
+
+\begin{document}
+\maketitle
+
+\input{thrombolysis}
+\input{thrombectomy}
+
+\bibliographystyle{alpha}
+\bibliography{refs}
+
+\end{document}
